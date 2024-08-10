@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-to-Speech Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.jpeg" type="image/x-icon"> <!-- Link to the favicon -->
+</head>
+<body>
+    <div class="container">
+        <h1>Text-to-Speech Generator</h1>
+        <form id="textForm">
+            <textarea id="textInput" placeholder="Enter text here..." rows="5"></textarea>
+            <button type="submit">Generate Speech</button>
+        </form>
+        <div id="audioControls" class="hidden">
+            <audio id="audioPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+            <button id="downloadButton">Download</button>
+        </div>
+        <div id="error" class="hidden">Error generating speech. Please try again.</div>
+        <div id="loader" class="hidden">Loading...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
